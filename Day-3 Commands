@@ -1,0 +1,20 @@
+Here today we have read the content files of Webserver with webclient
+
+Commands used 
+3 ways to set webserver in the O/S
+
+1) yum install httpd
+
+2) cd /var/www/html
+
+and then create file in this location.
+
+3)run systemctl start httpd 
+
+    (or)
+
+  httpd
+
+and in the server run curl htt://webserver_ip_add/file_Name
+
+and that's it. the setup is ready
