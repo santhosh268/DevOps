@@ -8,3 +8,29 @@ Terms like : Contanerixation
 Step-1: Launch AWS linux instance in AWS:
 switch to root 
 1)sudo su-root
+
+To check wheather the devops is launched or not:
+
+2)rpm -q docker & 3) rpm -q docker ce
+
+Install docker
+
+#yum install docker
+
+Check docker
+
+systemctl status docker
+
+#docker ps
+
+To install a O/S we need a O/S image (available in hub.docker.com)
+
+#docker pull ubuntu:14.04
+To run docker
+# docker run -t -i ubuntu:14.04
+
+Now the container will be launched and to stop the image
+
+exit and to conterol from host O/S like linux
+
+docker stop (pass container)id)
