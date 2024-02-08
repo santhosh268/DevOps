@@ -34,3 +34,50 @@ Now the container will be launched and to stop the image
 exit and to conterol from host O/S like linux
 
 docker stop (pass container)id)
+
+
+Day -2 Commands (Pics)
+
+Day-3 Commands
+Here today we have read the content files of Webserver with webclient
+
+Commands used 
+3 ways to set webserver in the O/S
+
+1) yum install httpd
+
+2) cd /var/www/html
+
+and then create file in this location.
+
+3)run systemctl start httpd 
+
+    (or)
+
+  httpd
+
+and in the server run curl htt://webserver_ip_add/file_Name
+
+and that's it. the setup is ready
+
+Ctrl+P+Q ---> to come out the terminal instead of closing it.
+
+docker exec Container_Namr Command_Name
+ex: docker exec webclient curl http://172.0.1.2 sai.html
+(Running docker commands from Base O/S)
+
+free -m (To check the RAM of a base O/S)
+
+lscpu  --> No.of CPU's
+
+df - h too see the hard disk of base os
+
+The data is stored permenantly only if it is connected to external device or H/w
+
+So the command is : docker run -it --name OS1 /data:/var/www/html/posts centos:7.
+
+In this case in my base O/S folder data is already created and in the container we have created a folder called as posts.
+
+Through this although the container got deleted, the data will be stored in data folder which is created in the base o/s (i.e., need to create before launching the conatainer).
+
+
