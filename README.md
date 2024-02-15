@@ -8,3 +8,5 @@ Projects performed till date
 2)Storing the containers data permenantly by creating folder in Base O/S and having the containers folder link to it.
 
 3)Accessing the website page from your browser and webpage launched in container
+
+docker run -it --name webserver -p 1234:80 -v /folder:/var/www/html centos:7 
