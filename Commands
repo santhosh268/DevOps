@@ -1,0 +1,9 @@
+Hello Everyone,
+
+Today's commands ARE:
+
+docker rm container_Name
+
+docker rm $(docker -ps -a -q) --> To remove all containers.
+
+docker rm -f $(docker -ps -a -q)
