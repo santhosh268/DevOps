@@ -7,3 +7,5 @@ docker rm container_Name
 docker rm $(docker -ps -a -q) --> To remove all containers.
 
 docker rm -f $(docker -ps -a -q)
+
+The use $() --> It doesn't consider this as string, it considers this as a command
