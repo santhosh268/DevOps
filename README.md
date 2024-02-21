@@ -10,3 +10,5 @@ Projects performed till date
 3)Accessing the website page from your browser and webpage launched in container
 
 docker run -it --name webserver -p 1234:80 -v /folder:/var/www/html centos:7 
+
+4) Establishing a 3-Tier Architecture and deploying it on top of DEVOPS
